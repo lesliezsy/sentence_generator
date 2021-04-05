@@ -8,14 +8,14 @@ function generateSentence(options){
     const targets = {
         engineer: '工程師',
         designer: '設計師',
-        entrepreneur: '企業家'
+        entrepreneur: '創業家'
     }
     const task = {
-        engineer: ['加個按鈕', '加新功能', '切個版', '改一點 code'],
-        designer: ['畫一張圖', '改個 logo', '順便幫忙設計一下', '隨便換個設計'],
-        entrepreneur: ['週末加班', '要能賺錢', '想個 business model', '找 VC 募錢']
+        engineer: ['加個按鈕', '加新功能', '切個版', '改一點 code', '寫個document'],
+        designer: ['畫一張圖', '改個 logo', '順便幫忙設計一下', '隨便換個設計', '視覺設計給你做'],
+        entrepreneur: ['週末加班', '要能賺錢', '想個 business model', '找 VC 募資']
       }
-    const phrase = ['還好吧，沒什麼大不了','很容易','很快','很正常', '說得過去', '合理']
+    const phrase = ['還好吧，沒什麼大不了','很容易','很快','很正常', '說得過去', '合理', '應該的']
     
     const target = options.task // 'engineer'
     const randomTask = sample(task[target])
