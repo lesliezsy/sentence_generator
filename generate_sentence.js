@@ -11,17 +11,17 @@ function generateSentence(options){
         entrepreneur: '創業家'
     }
     const task = {
-        engineer: ['加個按鈕', '加新功能', '切個版', '改一點 code', '寫個document'],
-        designer: ['畫一張圖', '改個 logo', '順便幫忙設計一下', '隨便換個設計', '視覺設計給你做'],
+        engineer: ['加個按鈕', '加個新功能', '切個版', '改一點 code', '寫個document', '順便維護一下舊專案', '會個UI/UX'],
+        designer: ['畫一張圖', '改個 logo', '這配色幫忙想一下', '想個視覺造型', '規劃一下視覺設計', '這個圖改一改'],
         entrepreneur: ['週末加班', '要能賺錢', '想個 business model', '找 VC 募資']
       }
-    const phrase = ['還好吧，沒什麼大不了','很容易','很快','很正常', '說得過去', '合理', '應該的']
+    const phrase = ['還好', '很容易', '很快', '很正常', '說得過去', '合理', '應該的', '沒什麼', '小case', '是本分']
     
     const target = options.task // 'engineer'
     const randomTask = sample(task[target])
     const randomPhrase = sample(phrase)
 
-    return `身為一個${targets[target]}，${randomTask}，${randomPhrase}吧！？`
+    return `身為${targets[target]}，${randomTask}，${randomPhrase}啦～～～`
 }
 // 雜湊函式
 function sample(array) {
